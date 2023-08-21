@@ -141,8 +141,8 @@ if(number1 === number2) {
 let variable = prompt("write some data");
 if (typeof variable === "undefined" || typeof variable === "object"
     || typeof variable === "number" || typeof variable === "string"
-    || typeof x === "null" || typeof x === 'NaN') {
-    x = "default";
+    || typeof variable === "null" || typeof variable === 'NaN') {
+    variable = "default";
 }
 // - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 let coursesAndDurationArray = [
