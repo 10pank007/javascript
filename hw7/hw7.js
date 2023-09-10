@@ -150,5 +150,6 @@ poleliushkas.push("sofia", 27, 41);
 poleliushkas.push("kristina", 25, 36);
 poleliushkas.push("alina", 23, 37);
 poleliushkas.push("nastia", 30, 39);
+let printsBohdan = new Prints('bohdan', 27, 38);
 console.log(poleliushkas.filter(value => value.legSize === printsBohdan.findShou));
 console.log(poleliushkas.find(value => value.legSize === printsBohdan.findShou));
