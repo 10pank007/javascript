@@ -1,0 +1,44 @@
+let a: string = "hello";
+console.log(a);
+let b: string = "owu";
+console.log(b);
+let c: string = "com";
+console.log(c);
+let d: string = "ua";
+console.log(d);
+let e: number = 1;
+console.log(e);
+let f: number = 10;
+console.log(f);
+let g: number = -999;
+console.log(g);
+let h: number = 123;
+console.log(h);
+let i: number = 3.14;
+console.log(i);
+let j: number = 2.7;
+console.log(j);
+let k: number = 16;
+console.log(k);
+let l: boolean = true;
+console.log(l);
+let m: boolean = false;
+console.log(m);
+
+let firstName: string = "Паньків";
+let middleName: string = "Богдан";
+let lastName: string = "Юрійович";
+let person: string = firstName + " " + middleName + " " + lastName;
+console.log(person);
+
+let a1: number = 100;
+console.log(typeof a1, a1);
+let b1: string = '100';
+console.log(typeof b1, b1);
+let c1: boolean = true;
+console.log(typeof c1, c1);
+
+let name1: string = prompt("write your name");
+let middleName1: string = prompt("write your middle name");
+let age: number = +prompt("write your age");
+console.log(name1 + " " + middleName1 + " " + age);
