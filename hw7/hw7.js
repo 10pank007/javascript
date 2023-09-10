@@ -140,16 +140,16 @@ function Prints(name, age, findShou) {
     this.findShou = findShou;
 }
 let poleliushkas = [];
-poleliushkas.push("ira", 18, 38);
-poleliushkas.push("olia", 20, 40);
-poleliushkas.push("vika", 19, 39);
-poleliushkas.push("maria", 21, 39);
-poleliushkas.push("katia", 22, 38);
-poleliushkas.push("ilona", 25, 37);
-poleliushkas.push("sofia", 27, 41);
-poleliushkas.push("kristina", 25, 36);
-poleliushkas.push("alina", 23, 37);
-poleliushkas.push("nastia", 30, 39);
+poleliushkas.push(new Popeliushka("ira", 18, 38));
+poleliushkas.push(new Popeliushka("olia", 20, 40));
+poleliushkas.push(new Popeliushka("vika", 19, 39));
+poleliushkas.push(new Popeliushka("maria", 21, 39));
+poleliushkas.push(new Popeliushka("katia", 22, 38));
+poleliushkas.push(new Popeliushka("ilona", 25, 37));
+poleliushkas.push(new Popeliushka("sofia", 27, 41));
+poleliushkas.push(new Popeliushka("kristina", 25, 36));
+poleliushkas.push(new Popeliushka("alina", 23, 37));
+poleliushkas.push(new Popeliushka("nastia", 30, 39));
 let printsBohdan = new Prints('bohdan', 27, 38);
 console.log(poleliushkas.filter(value => value.legSize === printsBohdan.findShou));
 console.log(poleliushkas.find(value => value.legSize === printsBohdan.findShou));
