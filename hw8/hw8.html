@@ -54,6 +54,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            margin: 0;
         }
         .list {
             margin: 20px;
@@ -78,6 +79,8 @@
     let elements = ['Main','Products','About us','Contacts'];
     // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
     let ul = document.createElement('ul')
+    ul.style.backgroundColor = 'blue';
+    ul.style.margin = '0';
     for (let element of elements) {
         let li = document.createElement('li')
         li.innerText = element;
@@ -97,6 +100,7 @@
     // Завдання робити через цикли.
     for (let coursesAndDurationArrayElement of coursesAndDurationArray) {
         let divArr = document.createElement('div');
+        divArr.style.backgroundColor = 'red';
         divArr.innerText = `title - ${coursesAndDurationArrayElement.title}, monthDuration - ${coursesAndDurationArrayElement.monthDuration}`;
         document.body.append(divArr);
     }
@@ -273,10 +277,10 @@
         hour.classList.add('hour');
         hour.innerText = coursesArrayElement.hourDuration;
         div2.append(month, hour);
-        let modules = document.createElement('div');
+        let modules = document.createElement('ul');
         modules.classList.add('modules');
         for (let module of coursesArrayElement.modules) {
-            let modulesArr = document.createElement('div');
+            let modulesArr = document.createElement('li');
             modulesArr.classList.add('list')
             modulesArr.innerText = module;
             modules.append(modulesArr);
